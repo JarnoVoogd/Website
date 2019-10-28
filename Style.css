@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Avenir&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 
 
 	
@@ -20,20 +21,21 @@ body{
     border-left:3rem solid black;
 	min-height:100vh;
 	font-family: Avenir;
-	z-index: 10;
+	z-index: 1;
 }
 
 h3{
     font-style: normal;
-	color: red; 
-	font-size: 2em;   
-	
+	color: #ff3e3e; 
+	font-size: 2.3em;
+	font-family: Source Sans Pro;   	
 }
 
 h1{
 	color: #ffffff;
-	transform: translate(-247.5px, 90px) rotate(270deg);
+	transform: translate(-249px, 80px) rotate(270deg);
 	font-size: 2.3em;
+	font-family: Source Sans Pro;
 }
 
 * {
@@ -43,11 +45,13 @@ h1{
 }
 
 h1 > span{
-	color: red;
+	color: #ff3e3e;
+	font-family: Muli;
+	font-size: 0.8em;
 }
 
 p > span{
-	color: red;
+	color: #ff3e3e;
 	white-space: pre-line;
 }
 
@@ -60,12 +64,13 @@ nav ul{
 	justify-content: space-around;
 	position: fixed;
 	bottom: 0;
-	z-index: 20;	 
+	z-index: 10;
+	/* border: solid black;	  */
 }
 
 nav li{
 	list-style: none;
-	background-color: red;
+	background-color: #ff3e3e;
 	width: 4.8em;
 	height: 4.8em;
 	border-radius: 25%;
@@ -79,6 +84,7 @@ nav li{
     justify-content: center;
     transition:all .25s;
 }
+
 nav li.activepage,
 nav li:hover {
 	background-color: black;
@@ -117,7 +123,6 @@ img.rechts{
 	width: 8em;
 	height: auto;
 	margin: 1em 1em 0.7em 0.5em;
-
 }
 
 /* traffic rules */
@@ -130,21 +135,20 @@ img.fietspadbord{
 #buttons ul{
 	justify-content: space-around;
 	position: fixed;
-	transform: translate(-16px, 20px);
+	transform: translate(-10px, 20px);
 	z-index: 20;	 
 }
 
 #buttons li{
 	list-style: none;
-	background-color: white;
-	width: 15.89em;
-	height: 10em;
+	background-color: black;
+	width: 13.7em;
+	height: 9em;
 	border-radius: 0;
 	text-align: center;
-	border-top: solid black;
-	border-bottom: solid black;
-    border-width: 0.001em;
-	margin: 0px;
+	border: solid black;
+    border-width: 0em;
+	margin: 0.8em;
     position: relative;
     display:flex;
     align-items: center;
@@ -154,16 +158,150 @@ img.fietspadbord{
 }
 
 #buttons li:hover {
-	background-color: #0583F2;
+	background-color: #ff3e3e;
 }
 
 #buttons li a{
 	text-decoration: none;
     display:block;
     text-align:center;
-    color:#000;
+    color: white;
 }
 
 #buttons li:hover a{
-    color:#fff;
+    color: black;
+}
+
+/* verkeersborden  buttons */
+
+#button button{
+	list-style: none;
+	background-color: black;
+	width: 16em;
+	height: 11em;
+	border-radius: 0;
+    position: relative;
+    justify-content: space-around;
+	transition:all .25s;
+	font-size: 12px;
+	margin: 0.8em 1em 1em 0.8em;
+	align-items: center;
+	float: left;
+}
+
+#button :hover{
+	background-color: #ff3e3e;
+}
+
+#button .fietspadbord2{
+	max-width: 80%;
+	height: auto;
+}
+
+#button .tegenliggend{
+	max-width: 55%;
+	height: auto;
+}
+
+#button .fietspadbord{
+	width: 45%;
+	height: 65%;
+}
+
+#button .voetpadbord{
+	width: 7em;
+	height: auto;
+}
+
+#button .eindefietspadbord{
+	width: 45%;
+	height: 65%;
+}
+
+#button .eindefietspadbord2{
+	width: 80%;
+	height: auto;
+}
+
+#button .verbodenfietsenbord{
+	width: 45%;
+	height: 65%;
+}
+
+#button .bromfietspadbord{
+	width: 7em;
+	height: auto;
+}
+
+
+ /* Bromfietspadbord pagina */
+
+
+/* terugknop deel 1 */
+.button {
+  position: fixed;
+  margin: 0;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: (2.8px);
+  padding-bottom: (2.8px);
+  background: black;
+  color: white;
+  font-size: 14px;
+  transform: translate(15px, 620px);
+  height: 1.15em;
+  z-index: 10;
+}
+
+.button::after {
+  content: '';
+  position: absolute;
+  top: -4.5px;
+  right: 0;
+  width: 0.4em;
+  height: 0.15em;
+  z-index: 10;
+  transform: translate(-5px, 0);
+}
+
+.button:hover { 
+	background: #ff3e3e; 
+	color: black;
+}
+
+/* Terugknop deel 2 */
+.next::after, .prev::after { 
+	border-style: solid; 
+}
+
+/* Terugknop deel 3*/
+.prev::after {
+  left: -22px;
+  border-color: transparent black transparent transparent;
+  border-width: 12px;
+}
+
+.prev:hover::after {
+  border-right-color: #ff3e3e;
+}
+
+/* illustratie verkeersbord */
+.illustratie{
+	height: auto;
+	width: 9em;
+	float: right;
+	margin: 1em 1em 1em 1em;
+}
+
+#uitleg{
+	margin: 1em 1em 1em 0em;
+}
+
+#uitleg p{
+	margin-bottom: 1em;
+}
+
+#uitleg spam{
+color: #ff3e3e;
+
 }

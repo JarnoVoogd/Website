@@ -341,7 +341,7 @@ color: #ff3e3e;
 #homepageknop ul{
 	justify-content: space-around;
 	position: fixed;
-	transform: translate(-0.625em, 1.250em);
+	transform: translate(0.3em, 4em);
 	z-index: 20;	 
 }
 

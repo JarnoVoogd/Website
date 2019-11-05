@@ -185,7 +185,7 @@ img.fietspadbord{
     justify-content: space-around;
 	transition:all .25s;
 	font-size: 0.750em;
-	margin: 1.7em 1em 0.8em 0.3em;
+	margin: 1em 1em 0.8em 0.3em;
 	align-items: center;
 	float: left;
 	transform: translate(1.8em, 4.8em);
@@ -241,25 +241,24 @@ img.fietspadbord{
 
  /* Bromfietspadbord pagina */
 
- #uitleg{
-	transform: translate(0em, 4em)
+ #uitleg2{
+	transform: translate(0em, 4em);
  }
 
- #uitleg h2{
+ #uitleg2 h2{
 	 font-size: 1.3em;
 	 text-decoration-line: underline;
 	 color: #ff3e3e;
 	 font-family: Source Sans Pro;
-	 margin: 2em 0em 2.7em 0em;
+	 margin: 2em 0em 1.8em 0em;
 
  }
- #uitleg p{
-	 margin: 2em 0.3em 0.5em 0em;
-
-	
+ 
+ #uitleg2 p{
+	 margin: 1em 0.3em 0.5em 0em;
  }
 #illustratie img{
-	width: 13em;
+	width: 12em;
 	height: auto;
 	transform: translate(0em, 0.3em);
 	

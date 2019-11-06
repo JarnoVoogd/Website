@@ -241,7 +241,7 @@ img.fietspadbord{
 }
 
 #button{
-	padding-bottom: 2em;
+    display: inline-block;
 }
 
 

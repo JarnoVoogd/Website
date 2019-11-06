@@ -26,6 +26,10 @@ body{
 	/* overflow: visible; */
 }
 
+#spacing{
+	height: 2em;
+}
+
 
 h3{
     font-style: normal;

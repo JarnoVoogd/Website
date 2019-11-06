@@ -343,7 +343,6 @@ color: #ff3e3e;
  /* Inactieve pagina */
 #homepageknop ul{
 	justify-content: space-around;
-	position: fixed;
 	transform: translate(0.3em, 4em);
 	z-index: 20;	 
 }
@@ -359,7 +358,6 @@ color: #ff3e3e;
 	border-width: 0em;
 	border-radius: 10%;
 	margin: 0.8em;
-    position: relative;
     display:flex;
     align-items: center;
     justify-content: center;

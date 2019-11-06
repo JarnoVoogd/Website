@@ -23,6 +23,11 @@ body{
 	font-family: Avenir;
 	z-index: 1;
 	font-size: 0.8em;
+	overflow: visible;
+}
+
+p{
+	font-size: 1.1em;
 }
 
 h3{
@@ -66,7 +71,7 @@ nav ul{
 	position: fixed;
 	bottom: 0;
 	z-index: 99;
-	/* border: solid black;	  */
+	
 }
 
 nav li{
@@ -83,7 +88,8 @@ nav li{
     display:flex;
     align-items:center;
     justify-content: center;
-    transition:all .25s;
+	transition:all .25s;
+	font-size: 1.03em
 }
 
 nav li.activepage,
@@ -135,9 +141,9 @@ img.fietspadbord{
 
 #buttons ul{
 	justify-content: space-around;
-	position: fixed;
+	position: relative;
 	transform: translate(0.3em, 6em);
-	z-index: 20;	 
+	z-index: 1;	 
 }
 
 #buttons li{
@@ -261,15 +267,14 @@ img.fietspadbord{
 	width: 12em;
 	height: auto;
 	transform: translate(0em, 0.3em);
-	
 	margin: 0.5em;
 	
 }
 
 /* terugknop deel 1 */
 .button {
-  position: fixed;
-  margin: 0;
+  position: absolute;
+  margin: 0.5em 0em 0em -3.5em;
   padding-left: 0.875em;
   padding-right: 0.875em;
   padding-top: 0.08em;
@@ -277,20 +282,17 @@ img.fietspadbord{
   background: black;
   color: white;
   font-size: 0.875em;
-  transform: translate(0.938em, 1em);
+  transform: translate(4em, 1em);
   height: 1.15em;
   z-index: 10;
 }
 
 .button::after {
-  content: '';
-  position: absolute;
-  top: -0.35em;
-  right: 0;
-  width: 0.4em;
-  height: 0.15em;
-  z-index: 10;
-  transform: translate(-0.4em, -0.14em);
+	content: '';
+    position: absolute;
+    top: -0.45em;
+    right: 60px;
+    z-index: 10;
 }
 
 .button:hover { 

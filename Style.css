@@ -23,7 +23,7 @@ body{
 	font-family: Avenir;
 	z-index: 1;
 	font-size: 0.8em;
-	overflow: visible;
+	/* overflow: visible; */
 }
 
 p{
